@@ -49,9 +49,11 @@ async function run() {
       if (files.length == 0) {
         console.warn(`🤔 ${config.input_files} not include valid file.`);
       }
-      await Promise.all(files.map(async path => {
-        await upload(gh, rel.upload_url, path);
-      })).catch(error => {
+      await Promise.all(
+        files.map(async path => {
+          await upload(gh, rel.upload_url, path);
+        })
+      ).catch(error => {
         throw error;
       });
     }

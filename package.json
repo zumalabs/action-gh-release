@@ -1,5 +1,5 @@
 {
-  "name": "action-gh-release",
+  "name": "zuma-action-gh-release",
   "version": "0.1.5",
   "private": true,
   "description": "GitHub Action for creating GitHub Releases",
